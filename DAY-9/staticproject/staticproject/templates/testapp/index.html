@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>working with static</title>
+
+    <!-- linking css from static folder -->
+    <link rel="stylesheet" href="{ static 'css/style.css' %}">
+</head>
+<body>
+    
+    <h1>This is python  course page</h1>
+    <img src="{% static 'images/course.jpg' %}" alt="Loading">
+</body>
+</html>

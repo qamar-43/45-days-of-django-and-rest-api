@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ heading }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <!-- Category Menu (horizontal) -->
+    <ul class="category-list horizontal">
+        <li><a href="/movies">🎬 Movies</a></li>
+        <li><a href="/sports">🏏 Sports</a></li>
+        <li><a href="/politics">📰 Politics</a></li>
+        <li><a href="/software">💻 Software</a></li>
+        <li><a href="/business">💼 Business</a></li>
+    </ul>
+
+    <!-- News Heading -->
+    <h1>{{ heading }}</h1>
+
+    <!-- Section 1 -->
+    <div class="article-card">
+        <h2>Section 1</h2>
+        <p>{{ sub1|linebreaksbr }}</p>
+
+        {% if type == 'movies' %}
+            <img src="{% static 'images/m1.jpg' %}" alt="Movies News">
+        {% elif type == 'sports' %}
+            <img src="{% static 'images/s1.jpeg' %}" alt="Sports News">
+        {% elif type == 'business' %}
+            <img src="{% static 'images/b1.jpg' %}" alt="Business News">
+        {% elif type == 'software' %}
+            <img src="{% static 'images/sw1.jpg' %}" alt="Software News">
+        {% elif type == 'politics' %}
+            <img src="{% static 'images/p1.jpeg' %}" alt="Politics News">
+        {% endif %}
+    </div>
+
+    <!-- Section 2 -->
+    <div class="article-card">
+        <h2>Section 2</h2>
+        <p>{{ sub2|linebreaksbr }}</p>
+
+        {% if type == 'movies' %}
+            <img src="{% static 'images/m2.jpg' %}" alt="Movies News">
+        {% elif type == 'sports' %}
+            <img src="{% static 'images/s2.jpeg' %}" alt="Sports News">
+        {% elif type == 'business' %}
+            <img src="{% static 'images/b2.jpeg' %}" alt="Business News">
+        {% elif type == 'software' %}
+            <img src="{% static 'images/sw2.jpeg' %}" alt="Software News">
+        {% elif type == 'politics' %}
+            <img src="{% static 'images/p2.jpeg' %}" alt="Politics News">
+        {% endif %}
+    </div>
+
+    <!-- Section 3 -->
+    <div class="article-card">
+        <h2>Section 3</h2>
+        <p>{{ sub3|linebreaksbr }}</p>
+
+        {% if type == 'movies' %}
+            <img src="{% static 'images/m3.jpg' %}" alt="Movies News">
+        {% elif type == 'sports' %}
+            <img src="{% static 'images/s3.jpeg' %}" alt="Sports News">
+        {% elif type == 'business' %}
+            <img src="{% static 'images/b3.jpeg' %}" alt="Business News">
+        {% elif type == 'software' %}
+            <img src="{% static 'images/sw3.jpeg' %}" alt="Software News">
+        {% elif type == 'politics' %}
+            <img src="{% static 'images/p3.jpeg' %}" alt="Politics News">
+        {% endif %}
+    </div>
+
+    <footer style="text-align: left;">
+        <p>© 2025 HNI-NEWS | Stay Informed</p>
+    </footer>
+</body>
+</html>

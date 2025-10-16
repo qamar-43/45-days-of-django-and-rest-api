@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNI-NEWS</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <!-- Main Heading -->
+    <h1 style="font-weight: 900; text-transform: uppercase; text-align: center;">
+        UNI-NEWS
+    </h1>
+
+    <!-- News banner -->
+    <img src="{% static 'images/news.img.jpg' %}" alt="News Banner" class="banner-img" height="500" width="900">
+
+
+    <!-- Vertical List of Topics -->
+    <ul class="category-list vertical">
+        <li><a href="/movies">🎬 Movies</a></li>
+        <li><a href="/sports">🏏 Sports</a></li>
+        <li><a href="/politics">📰 Politics</a></li>
+        <li><a href="/software">💻 Software</a></li>
+        <li><a href="/business">💼 Business</a></li>
+    </ul>
+
+    <footer>
+        <p>© 2025 HNI-NEWS | Stay Informed</p>
+    </footer>
+
+</body>
+</html>

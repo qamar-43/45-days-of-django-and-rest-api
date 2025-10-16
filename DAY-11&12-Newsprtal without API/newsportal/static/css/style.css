@@ -1,0 +1,138 @@
+/* Background with black & red theme */
+body {
+    background: linear-gradient(135deg, #000000, #1a0000, #330000);
+    color: #ffffff;
+    font-family: "Merriweather", Georgia, serif;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+    text-align: left;
+}
+
+/* Main heading (center only) */
+h1 {
+    padding: 20px;
+    font-size: 48px;
+    color: #ffffff;
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center; /* keep h1 centered */
+    font-weight: 700; 
+    text-align: center;  /* bold */
+}
+
+/* Apply left alignment + bold to everything else */
+h2, h3, p, ul, li, footer {
+    text-align: left;
+    font-weight: 700;
+}
+
+/* Subheadings */
+h2, h3 {
+    color: #f2c94c;
+    font-size: 28px;
+    margin: 15px 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Category list */
+.category-list {
+    max-width: 300px;
+    margin: 30px auto;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.category-list li {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700; /* bold */
+    transition: all 0.3s ease;
+}
+
+.category-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-weight: 700; /* bold */
+}
+
+/* Hover effect */
+.category-list li:hover {
+    background: #ff3b30;
+    border-color: #ff3b30;
+    transform: translateX(5px);
+}
+
+.category-list li:hover a {
+    color: #fff;
+}
+
+/* Article card */
+.article-card {
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: left; /* left align all inside */
+    font-weight: 700;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Images */
+img {
+    height: 600px;
+    width: 1200px;
+    border-radius: 12px;
+    border: 3px solid black;
+    margin: 10px;
+    display: inline-block;
+    object-fit: cover;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-self: center;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 16px rgba(0,0,0,0.8);
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #1a0000;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: left; /* align footer left */
+    font-weight: 700;
+}
+
+
+/* Center only the main banner image */
+.banner-img {
+    display: block;
+    margin: 20px auto;   /* auto centers horizontally */
+    border-radius: 12px;
+}
+
+.article-card img {
+    display: block;
+    margin: 15px auto;
+    max-width: 90%;  /* makes responsive */
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #ff3b30;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
+}
+
+
